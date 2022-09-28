@@ -20,6 +20,11 @@ module.exports = {
     minimize: false,
   },
   module: {
+    parser: {
+      javascript: {
+        dynamicImportMode: "eager",
+      },
+    },
     rules: [
       {
         test: /\.jsx?$/,
